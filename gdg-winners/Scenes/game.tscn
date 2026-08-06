@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://6teiqkmg2n5"]
 
+[ext_resource type="PackedScene" uid="uid://x5bjalsloxpq" path="res://Scenes/pirate_girl.tscn" id="1_ebmjs"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qrlo0"]
+
 [node name="Game" type="Node2D" unique_id=1535057902]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=497330404]
+shape = SubResource("WorldBoundaryShape2D_qrlo0")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2042483688]
+zoom = Vector2(4, 4)
+
+[node name="pirate girl" parent="." unique_id=1411783864 instance=ExtResource("1_ebmjs")]

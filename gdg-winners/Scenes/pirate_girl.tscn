@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://x5bjalsloxpq"]
+
+[ext_resource type="Texture2D" uid="uid://x4spd7w3dc3q" path="res://Assets/TinyRPG/Characters/Top-Down-16-bit-fantasy/Characters pack 1/PirateGirl/spritesheet.png" id="1_g2ytd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvy36"]
+atlas = ExtResource("1_g2ytd")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8uulg"]
+atlas = ExtResource("1_g2ytd")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dhuqo"]
+atlas = ExtResource("1_g2ytd")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ort1t"]
+atlas = ExtResource("1_g2ytd")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qrlo0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvy36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8uulg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dhuqo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ort1t")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qrlo0"]
+radius = 4.0
+
+[node name="pirate girl" type="Node2D" unique_id=1411783864]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2114651265]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_qrlo0")
+autoplay = "default"
+frame_progress = 0.6569741
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=126368348]
+position = Vector2(0, -10)
+shape = SubResource("CircleShape2D_qrlo0")
