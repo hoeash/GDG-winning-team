@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://gvicp1qpw6wv"]
 
 [ext_resource type="Script" uid="uid://d3hu1ypm76xry" path="res://Characters/player.gd" id="1_oo13o"]
-[ext_resource type="Texture2D" uid="uid://c4wlkwdooid45" path="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_t8hoq"]
+[ext_resource type="Texture2D" uid="uid://cdvu5qcpjait1" path="res://Assets/6852d94a-e865-46c6-876c-26ef56a0252b.png" id="2_oo13o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4n0sl"]
-size = Vector2(12, 6)
+size = Vector2(9, 16.5)
 
 [sub_resource type="Animation" id="Animation_oo13o"]
 length = 0.001
@@ -23,7 +23,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_1ju47"]
 resource_name = "idle_down"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -40,7 +40,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_ynroq"]
 resource_name = "idle_left"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -57,7 +57,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_v6d5b"]
 resource_name = "idle_right"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -74,7 +74,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_55lj8"]
 resource_name = "idle_up"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -91,7 +91,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_qhb0e"]
 resource_name = "walk_down"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -108,7 +108,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_7pihf"]
 resource_name = "walk_left"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -125,7 +125,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_c3bgu"]
 resource_name = "walk_right"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -142,7 +142,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_nwlvs"]
 resource_name = "walk_up"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -246,12 +246,13 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 script = ExtResource("1_oo13o")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=129679690]
-texture = ExtResource("1_t8hoq")
+scale = Vector2(0.075, 0.079)
+texture = ExtResource("2_oo13o")
 hframes = 4
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=823619602]
-position = Vector2(0, 5)
+position = Vector2(-0.5, 5.25)
 shape = SubResource("RectangleShape2D_4n0sl")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2057819506]
