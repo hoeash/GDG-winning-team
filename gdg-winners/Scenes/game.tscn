@@ -206,13 +206,13 @@ sources/6 = SubResource("TileSetAtlasSource_rfjv2")
 [node name="Game" type="Node2D" unique_id=1535057902]
 
 [node name="Player" parent="." unique_id=1150597899 instance=ExtResource("1_ebmjs")]
-position = Vector2(-7, -19)
+position = Vector2(29, 4)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player" unique_id=1287993487]
 remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=240961660]
-position = Vector2(-7, -19)
+position = Vector2(29, 4)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1215688665]
 tile_set = SubResource("TileSet_4n0sl")
