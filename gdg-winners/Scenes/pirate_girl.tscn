@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://x5bjalsloxpq"]
 
-[ext_resource type="Texture2D" uid="uid://x4spd7w3dc3q" path="res://Assets/TinyRPG/Characters/Top-Down-16-bit-fantasy/Characters pack 1/PirateGirl/spritesheet.png" id="1_g2ytd"]
+[ext_resource type="Texture2D" uid="uid://x4spd7w3dc3q" path="res://Assets/Other/TinyRPG/Characters/Top-Down-16-bit-fantasy/Characters pack 1/PirateGirl/spritesheet.png" id="1_g2ytd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nvy36"]
 atlas = ExtResource("1_g2ytd")
