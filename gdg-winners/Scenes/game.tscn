@@ -207,6 +207,7 @@ sources/6 = SubResource("TileSetAtlasSource_rfjv2")
 
 [node name="Player" parent="." unique_id=1150597899 instance=ExtResource("1_ebmjs")]
 position = Vector2(29, 4)
+starting_direction = Vector2(0, 0)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player" unique_id=1287993487]
 remote_path = NodePath("../../Camera2D")
