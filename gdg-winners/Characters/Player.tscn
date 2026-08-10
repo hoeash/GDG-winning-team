@@ -4,10 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://cdvu5qcpjait1" path="res://Assets/6852d94a-e865-46c6-876c-26ef56a0252b.png" id="2_oo13o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4n0sl"]
-size = Vector2(9, 16.5)
+size = Vector2(11, 16.5)
 
 [sub_resource type="Animation" id="Animation_oo13o"]
 length = 0.001
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -19,6 +20,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 1024, 1536)]
 }
 
 [sub_resource type="Animation" id="Animation_1ju47"]
@@ -54,6 +67,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [8, 9]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 1024, 1515), Rect2(0, 0, 1024, 1515)]
+}
 
 [sub_resource type="Animation" id="Animation_v6d5b"]
 resource_name = "idle_right"
@@ -70,6 +95,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [12, 13]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 1024, 1505), Rect2(0, 0, 1024, 1505)]
 }
 
 [sub_resource type="Animation" id="Animation_55lj8"]
@@ -122,6 +159,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [10, 11]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 1024, 1520), Rect2(0, 0, 1024, 1520)]
+}
 
 [sub_resource type="Animation" id="Animation_c3bgu"]
 resource_name = "walk_right"
@@ -138,6 +187,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [14, 15]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 1024, 1505), Rect2(0, 0, 1024, 1505)]
 }
 
 [sub_resource type="Animation" id="Animation_nwlvs"]
@@ -246,13 +307,17 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 script = ExtResource("1_oo13o")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=129679690]
+position = Vector2(-8.999999, -15)
 scale = Vector2(0.075, 0.079)
 texture = ExtResource("2_oo13o")
+centered = false
 hframes = 4
 vframes = 4
+region_enabled = true
+region_rect = Rect2(0, 0, 1024, 1536)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=823619602]
-position = Vector2(-0.5, 5.25)
+position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_4n0sl")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2057819506]
